@@ -35,6 +35,8 @@ function draw() {
   background(0);
   ground.display();
 
+  Engine.update(engine);
+
   if (frameCount % 60 === 0) {
     particles.push(new Particle(random(width / 2 - 10, width / 2 + 10), 10, 10));
   }
